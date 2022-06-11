@@ -1,0 +1,159 @@
+/*Paleta de colores:
+Naranja: #ffca4f
+Rosa: #ff757c
+Azul: #79DAE8
+
+Fuentes:
+Logo y títulos: Cocogoose
+Subtítulos: Quicksand
+Texto: ITCAvantGarde*/
+
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+@font-face {
+    font-family: Cocogoose;
+    src: url('Fuentes/Cocogoose Pro-trial.ttf');
+}
+
+@font-face {
+    font-family: Quicksand;
+    src: url('Fuentes/Quicksand_Book.otf');
+}
+
+@font-face {
+    font-family: ITCAvantGarde;
+    src: url('Fuentes/ITCAvantGardeStd-Md.ttf');
+}
+
+#logo h1{
+    font-family: Cocogoose, sans-serif;
+    color: #ffca4f;
+    padding: 1%;
+}
+
+#inicioSesion {
+    background-color: #79DAE8;
+    margin: 2% 15% 2% 15%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+#img {
+    width: 30%;
+    height: 80%;
+    padding-right: 10%;
+    padding-left: 10%;
+    object-fit: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*background-color: black;*/
+}
+
+#img img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+#form {
+    /*background-color: blue;*/
+    width: 30%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    object-fit: contain;
+    /*width: max-content;
+    height: max-content;*/
+}
+
+#form form {
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+    /*background-color: gray;*/
+}
+
+#form form label {
+    font-family: Quicksand, sans-serif;
+    font-weight: 900;
+    font-size: 1.2em;
+}
+
+#form form input[type=text] {
+    object-fit: contain;
+    width: 97%;
+    height: 30px;
+    margin-top: 3%;
+    margin-bottom: 10%;
+    font-family: ITCAvantGarde, sans-serif;
+    border-radius: 5px 5px 5px 5px;
+    border-color: transparent;
+}
+
+#form form input[type=submit] {
+    object-fit: contain;
+    width: 100%;
+    margin-top: 2%;
+    height: 35px;
+    padding-left: 0 auto;
+    padding-right: 0 auto;
+    border-radius: 20px 20px 20px 20px;
+    border-color: transparent;
+    font-family: ITCAvantGarde, sans-serif;
+    background-color: #ff757c;
+    color: white;
+}
+
+#form form input[type=submit]:hover {
+    transform: translate(0, -5px);
+    transition-duration: 1s;
+    background-color: #fb979c;
+    color: black;
+    cursor: pointer;
+}
+
+#registro {
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+    /*background-color: gray;*/
+    text-align: center;
+}
+
+#registro p {
+    font-family: ITCAvantGarde, sans-serif;
+    font-size: 0.9em;
+}
+
+#registro button {
+    object-fit: contain;
+    width: 100%;
+    margin-top: 2%;
+    height: 35px;
+    padding-left: 0 auto;
+    padding-right: 0 auto;
+    border-radius: 20px 20px 20px 20px;
+    border-color: transparent;
+    font-family: ITCAvantGarde, sans-serif;
+    background-color: #ff757c;
+    color: white;
+}
+
+#registro button:hover {
+    transform: translate(0, -5px);
+    transition-duration: 1s;
+    background-color: #fb979c;
+    color: black;
+    cursor: pointer;
+}
