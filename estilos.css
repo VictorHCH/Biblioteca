@@ -208,7 +208,7 @@ body {
 
 #formRegis form input[type=text] {
     object-fit: contain;
-    width: 97%;
+    width: 98%;
     height: 30px;
     margin-top: 2%;
     margin-bottom: 2%;
@@ -219,7 +219,7 @@ body {
 
 #formRegis form input[type=email] {
     object-fit: contain;
-    width: 97%;
+    width: 98%;
     height: 30px;
     margin-top: 2%;
     margin-bottom: 2%;
@@ -230,7 +230,7 @@ body {
 
 #formRegis form input[type=password] {
     object-fit: contain;
-    width: 97%;
+    width: 98%;
     height: 30px;
     margin-top: 2%;
     margin-bottom: 2%;

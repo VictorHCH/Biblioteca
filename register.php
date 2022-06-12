@@ -24,9 +24,9 @@
                 <label>Usuario</label><br/>
                 <input type="text" placeholder="Usuario..."><br/>
                 <label>Contraseña</label><br/>
-                <input type="text" placeholder="Contraseña..."><br/>
+                <input type="password" placeholder="Contraseña..."><br/>
                 <label>Confirmar contraseña</label><br/>
-                <input type="text" placeholder="Contraseña..."><br/>
+                <input type="password" placeholder="Contraseña..."><br/>
                 <input type="submit" value="Registrarse">
             </form>
         </div>
