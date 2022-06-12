@@ -8,11 +8,6 @@ Logo y títulos: Cocogoose
 Subtítulos: Quicksand
 Texto: ITCAvantGarde*/
 
-
-body {
-    background-color: rgb(255, 255, 255);
-}
-
 @font-face {
     font-family: Cocogoose;
     src: url('Fuentes/Cocogoose Pro-trial.ttf');
@@ -28,6 +23,11 @@ body {
     src: url('Fuentes/ITCAvantGardeStd-Md.ttf');
 }
 
+/*login.php*/
+body {
+    background-color: rgb(255, 255, 255);
+}
+
 #logo h1{
     font-family: Cocogoose, sans-serif;
     color: #ffca4f;
@@ -41,8 +41,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    
-
+    box-shadow: 20px 20px 10px rgb(139, 139, 139);
+    border-radius: 10px;
 }
 
 #img {
@@ -63,34 +63,34 @@ body {
     object-fit: contain;
 }
 
-#form {
+#formInicio {
     /*background-color: blue;*/
     width: 30%;
     height: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 11%;
+    padding-right: 11%;
     object-fit: contain;
     /*width: max-content;
     height: max-content;*/
 }
 
-#form form {
+#formInicio form {
     width: 250px;
     height: auto;
     object-fit: contain;
     /*background-color: gray;*/
 }
 
-#form form label {
+#formInicio form label {
     font-family: Quicksand, sans-serif;
     font-weight: 900;
     font-size: 1.2em;
 }
 
-#form form input[type=text] {
+#formInicio form input[type=text] {
     object-fit: contain;
     width: 97%;
     height: 30px;
@@ -101,7 +101,18 @@ body {
     border-color: transparent;
 }
 
-#form form input[type=submit] {
+#formInicio form input[type=password] {
+    object-fit: contain;
+    width: 97%;
+    height: 30px;
+    margin-top: 3%;
+    margin-bottom: 10%;
+    font-family: ITCAvantGarde, sans-serif;
+    border-radius: 5px 5px 5px 5px;
+    border-color: transparent;
+}
+
+#formInicio form input[type=submit] {
     object-fit: contain;
     width: 100%;
     margin-top: 2%;
@@ -115,7 +126,7 @@ body {
     color: white;
 }
 
-#form form input[type=submit]:hover {
+#formInicio form input[type=submit]:hover {
     transform: translate(0, -5px);
     transition-duration: 1s;
     background-color: #fb979c;
@@ -154,6 +165,98 @@ body {
     transform: translate(0, -5px);
     transition-duration: 1s;
     background-color: #fb979c;
+    color: black;
+    cursor: pointer;
+}
+
+/*register.php*/
+#register {
+    background-color: #ff757c;
+    margin: 2% 20% 2% 20%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 20px 20px 10px rgb(139, 139, 139);
+    border-radius: 10px;
+}
+
+#formRegis {
+    /*background-color: blue;*/
+    width: 40%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+    /*width: max-content;
+    height: max-content;*/
+}
+
+#formRegis form {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    /*background-color: gray;*/
+}
+
+#formRegis form label {
+    font-family: Quicksand, sans-serif;
+    font-weight: 900;
+    font-size: 1em;
+}
+
+#formRegis form input[type=text] {
+    object-fit: contain;
+    width: 97%;
+    height: 30px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-family: ITCAvantGarde, sans-serif;
+    border-radius: 5px 5px 5px 5px;
+    border-color: transparent;
+}
+
+#formRegis form input[type=email] {
+    object-fit: contain;
+    width: 97%;
+    height: 30px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-family: ITCAvantGarde, sans-serif;
+    border-radius: 5px 5px 5px 5px;
+    border-color: transparent;
+}
+
+#formRegis form input[type=password] {
+    object-fit: contain;
+    width: 97%;
+    height: 30px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-family: ITCAvantGarde, sans-serif;
+    border-radius: 5px 5px 5px 5px;
+    border-color: transparent;
+}
+
+#formRegis form input[type=submit] {
+    object-fit: contain;
+    width: 100%;
+    margin-top: 2%;
+    height: 35px;
+    padding-left: 0 auto;
+    padding-right: 0 auto;
+    border-radius: 20px 20px 20px 20px;
+    border-color: transparent;
+    font-family: ITCAvantGarde, sans-serif;
+    background-color: #00b1cc;
+    color: white;
+}
+
+#formRegis form input[type=submit]:hover {
+    transform: translate(0, -5px);
+    transition-duration: 1s;
+    background-color: #79DAE8;
     color: black;
     cursor: pointer;
 }
