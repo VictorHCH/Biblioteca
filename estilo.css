@@ -260,3 +260,27 @@ body {
     color: black;
     cursor: pointer;
 }
+
+/*index.php*/
+/*#index {
+    background-color: #ffca4f;
+}*/
+
+#logoIndex {
+    background-color: blue;
+    display: inline-flex;
+}
+
+#logoIndex h1{
+    font-family: Cocogoose, sans-serif;
+    color: #79DAE8;
+    padding: 1%;
+    background-color: gray;
+    width: max-content;
+    /*max-height: 100%;
+    object-fit: contain;*/
+}
+
+#find {
+    
+}
