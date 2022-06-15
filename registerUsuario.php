@@ -7,9 +7,9 @@
     $pass1 = filter_input(0, 'pass1');
     $pass2 = filter_input(0, 'pass2');
     $tipo = 1;
-    if($pass1 == $pass2 AND email_valid($email){
+    if($pass1 == $pass2 AND email_valid($email)){
         $query = "INSERT INTO usuarios(nombre, apellido, correo, usuario, pass, tipoUsuario) VALUES 
-                ($nombre, $apellido, $email, $usuario, $pass1, $tipo)";
+                ('$nombre', '$apellido', '$email', '$usuario', '$pass1', '$tipo')";
         $resultado = mysqli_query($conexion, $query);
         if(!$resultado){
             die("Error no se ingresaron los datos");

@@ -14,7 +14,7 @@
     </div>
     <div id="register">
         <div id="formRegis">
-            <form action="index.php" method="post">
+            <form action="registerUsuario.php" method="post">
                 <label>Nombre</label><br/>
                 <input type="text" name="nombre" placeholder="Nombre..."><br/>
                 <label>Apellido</label><br/>
