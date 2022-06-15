@@ -2,7 +2,7 @@ $(document).ready(function(){
     //alert('funciona');
     $('.me ul li a :first').addClass('act');
 
-    $('.me ul li a').click(function(){
+    $('.me ul li a').click(function(){  
         $('.me ul li a').removeClass('act');
         $(this).addClass('act');
     });

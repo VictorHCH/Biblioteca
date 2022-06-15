@@ -21,6 +21,7 @@
         die("Error no se ingresaron los datos");
     }
     echo 'Registro completado';
+    header("Location: muestra.php")
 
 
 ?>
