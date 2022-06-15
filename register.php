@@ -14,19 +14,19 @@
     </div>
     <div id="register">
         <div id="formRegis">
-            <form action="index.php" method="post">
+            <form action="registerUsuario.php" method="post">
                 <label>Nombre</label><br/>
-                <input type="text" placeholder="Nombre..."><br/>
+                <input type="text" name="nombre" placeholder="Nombre..."><br/>
                 <label>Apellido</label><br/>
-                <input type="text" placeholder="Apellido..."><br/>
+                <input type="text" name="apellido" placeholder="Apellido..."><br/>
                 <label>Correo</label><br/>
-                <input type="email" placeholder="Correo..."><br/>
+                <input type="email" name="email" placeholder="Correo..."><br/>
                 <label>Usuario</label><br/>
-                <input type="text" placeholder="Usuario..."><br/>
+                <input type="text" name="usuario" placeholder="Usuario..."><br/>
                 <label>Contraseña</label><br/>
-                <input type="password" placeholder="Contraseña..."><br/>
+                <input type="password" name="pass1" placeholder="Contraseña..."><br/>
                 <label>Confirmar contraseña</label><br/>
-                <input type="password" placeholder="Contraseña..."><br/>
+                <input type="password" name="pass2" placeholder="Contraseña..."><br/>
                 <input type="submit" value="Registrarse">
             </form>
         </div>

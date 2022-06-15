@@ -1,3 +1,14 @@
+<?php
+    session_start();
+    if(isset($_SESSION['tipo'])){
+        if($_SESSION['tipo'] == 0){
+            header('Location: login.php');
+        }
+    }
+    else{
+        header('Location: login.php');
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +23,7 @@
     <div id="logoIndex">
         <h1>Leyendo.com</h1>
         <div id="cerrar">
-            <a href="cerrar.php"><img src="img/cerrar.png"></a>
+            <a href="logoff.php"><img src="img/cerrar.png"></a>
         </div>
     </div>
     <div id="menu">
