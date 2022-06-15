@@ -28,18 +28,27 @@
     </div>
     <div id="menu">
         <ul>
+            <li><a href="index.php" class="current">Inicio</a></li>
+            <li><a href="favs.php">Favoritos</a></li>
+            <li><a href="usuarios.php">Usuarios</a></li>
+            <li><a href="libros.php">Libros</a></li>
+            <li><a href="cuenta.php">Cuenta</a></li>
+        </ul>
+    </div>
+    <!--<div id="menu">
+        <ul>
             <li><a href="#index" class="current">Inicio</a></li>
             <li><a href="#favs">Favoritos</a></li>
             <li><a href="#usuarios">Usuarios</a></li>
             <li><a href="#libros">Libros</a></li>
             <li><a href="#cuenta">Cuenta</a></li>
         </ul>
-</div>
+    </div>-->
     <div id="find">
         <img src="img/lupa.png">
         <input type="text" placeholder="¿Qué buscas?">
     </div>
-    <div id="favs">
+    <!--<div id="favs">
         <h1 >Favoritos</h1>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </div>
@@ -56,6 +65,6 @@
         <h1 >Cuenta</h1>
         <h1 >Cuenta</h1>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    </div>
+    </div>-->
 </body>
 </html>
