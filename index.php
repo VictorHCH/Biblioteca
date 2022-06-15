@@ -8,14 +8,25 @@
     <link href="estilo.css" rel="stylesheet" type="text/css">
     <link rel="icon" type="image/x-icon" href="img/Libro.ico">
 </head>
-<body>
+<body id="index">
     <div id="logoIndex">
         <h1>Leyendo.com</h1>
+        <div id="cerrar">
+            <img src="img/cerrar.png">
+        </div>
     </div>
+    <nav>
+        <ul>
+            <li><a href="index.php">Inicio</a></li>
+            <li><a href="favs.php">Favoritos</a></li>
+            <li><a href="usuarios.php">Usuarios</a></li>
+            <li><a href="libros.php">Libros</a></li>
+            <li><a href="cuenta.php">Cuenta</a></li>
+        </ul>
+    </nav>
     <div id="find">
         <img src="img/lupa.png">
-        <input type="text" placeholder="¿Qué buscas">
-        <img id="cerrar" src="img/cerrar.png">
+        <input type="text" placeholder="¿Qué buscas?">
     </div>
     <div id="inicioSesion">
         

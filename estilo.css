@@ -262,25 +262,115 @@ body {
 }
 
 /*index.php*/
-/*#index {
-    background-color: #ffca4f;
-}*/
+#index {
+    margin: 0;
+    padding: 0;
+}
 
 #logoIndex {
-    background-color: blue;
-    display: inline-flex;
+    background-color: #4fff52;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /*justify-content: center;*/
+    /*position: absolute;*/
+}
+
+#cerrar {
+    object-fit: contain;
+    /*background-color: #00b1cc;*/
+    padding: 1%;
+    width: 100%;
+}
+
+#cerrar img {
+    object-fit: contain;
+    height: 40px;
+    float: right;
 }
 
 #logoIndex h1{
     font-family: Cocogoose, sans-serif;
-    color: #79DAE8;
+    color: #ffffff;
     padding: 1%;
-    background-color: gray;
     width: max-content;
-    /*max-height: 100%;
+    /*background-color: blue;
+    max-height: 100%;
     object-fit: contain;*/
 }
 
 #find {
-    
+    width: 100%;
+    background-color: #ffca4f;
+    margin-top: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
+
+#find img {
+    object-fit: contain;
+    height: 30px;
+}
+
+#find input {
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 20%;
+    object-fit: contain;
+    height: 30px;
+    font-family: ITCAvantGarde, sans-serif;
+    border-radius: 5px 5px 5px 5px;
+    border-color: transparent;
+}
+
+/*#menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+div#mainMenu {
+    position: absolute;
+    left: 320px;
+    bottom: 0;
+}
+
+
+
+div#mainMenu li {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+div#mainMenu a{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 15px 0 30px;
+    margin-right: 10px;
+    line-height: 25px;
+    background: url(/images/GroundswellSprites.png) -286px -25px;
+    border: none;
+}
+
+div#mainMenu li a.current {
+    color: #f8b449;
+    background-position: -286px 0;
+}
+
+div#mainMenu a:hover{
+    margin-top: -5px;
+    height: 30px;
+    background-position: -86px 0;
+    color: #aaa;
+    line-height: 25px;
+}
+
+div#mainMenu li a.current {
+    cursor: default;
+}/*
