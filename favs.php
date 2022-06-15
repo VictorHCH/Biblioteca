@@ -12,7 +12,7 @@
     <div id="logoIndex">
         <h1>Leyendo.com</h1>
         <div id="cerrar">
-            <a href="cerrar.php"><img src="img/cerrar.png"></a>
+            <img src="img/cerrar.png">
         </div>
     </div>
     <div id="menu">

@@ -268,7 +268,7 @@ body {
 }
 
 #logoIndex {
-    background-color: #4fff52;
+    background-color: #ffca4f;
     width: 100%;
     display: flex;
     align-items: center;
@@ -326,51 +326,50 @@ body {
     border-color: transparent;
 }
 
-/*#menu ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-div#mainMenu {
-    position: absolute;
+#menu {
     left: 320px;
     bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-
-
-div#mainMenu li {
-    float: left;
+#menu ul{
+    list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding-top: 1%;
 }
 
-div#mainMenu a{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+#menu li {
+    float: left;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+#menu a{
+    font-family: Quicksand, sans-serif;
+    font-weight: 900;
+    font-size: 1.3em;
     display: block;
-    color: #fff;
+    background-color: #ffffff;
+    border-radius: 5px 5px 0 0;
+    color: #ff757c;
     text-decoration: none;
-    padding: 0 15px 0 30px;
+    padding: 0 20px 5px 20px;
     margin-right: 10px;
     line-height: 25px;
-    background: url(/images/GroundswellSprites.png) -286px -25px;
     border: none;
 }
 
-div#mainMenu li a.current {
-    color: #f8b449;
-    background-position: -286px 0;
-}
+/*#menu li a {
+    color: #fff;
+    background-color: #ffca4f;
+}*/
 
-div#mainMenu a:hover{
+#menu a:hover{
     margin-top: -5px;
     height: 30px;
-    background-position: -86px 0;
-    color: #aaa;
+    color: #ffffff;
+    background-color: #ffca4f;
     line-height: 25px;
 }
-
-div#mainMenu li a.current {
-    cursor: default;
-}/*
