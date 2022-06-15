@@ -41,6 +41,7 @@
     </div>
     <!--<div id="menu">
         <ul>
+<<<<<<< HEAD
             <li><a href="index.php" class="current">Inicio</a></li>
             <li><a href="favs.php">Favoritos</a></li>
             <li><a href="usuarios.php">Usuarios</a></li>
@@ -74,8 +75,6 @@
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </div>
     <div id="cuenta">
-        <h1 >Cuenta</h1>
-        <h1 >Cuenta</h1>
         <h1 >Cuenta</h1>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </div>
