@@ -41,12 +41,20 @@
     </div>
     <!--<div id="menu">
         <ul>
+<<<<<<< Updated upstream
 <<<<<<< HEAD
             <li><a href="index.php" class="current">Inicio</a></li>
             <li><a href="favs.php">Favoritos</a></li>
             <li><a href="usuarios.php">Usuarios</a></li>
             <li><a href="libros.php">Libros</a></li>
             <li><a href="cuenta.php">Cuenta</a></li>
+=======
+            <li><a href="#index" class="current">Inicio</a></li>
+            <li><a href="#favs">Favoritos</a></li>
+            <li><a href="#usuarios">Usuarios</a></li>
+            <li><a href="#libros">Libros</a></li>
+            <li><a href="#cuenta">Cuenta</a></li>
+>>>>>>> Stashed changes
         </ul>
     </div>-->
     <div class="me">
