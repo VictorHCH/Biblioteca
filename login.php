@@ -1,3 +1,12 @@
+<?php
+    session_start();
+    //valida que la session este iniciada
+    if(isset($_SESSION['tipo'])){
+        if($_SESSION['tipo'] > 0){
+            header('Location: index.php');
+        }
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,11 +27,11 @@
         </div>
         <div id="formInicio">
             <div>
-                <form action="index.php" method="post">
+                <form action="logon.php" method="post">
                     <label>Usuario</label><br/>
-                    <input type="text" placeholder="Usuario..."><br/>
+                    <input type="text" name="nom" placeholder="Usuario..."><br/>
                     <label>Contraseña</label><br/>
-                    <input type="password" placeholder="Contraseña..."><br/>
+                    <input type="password" name="pass" placeholder="Contraseña..."><br/>
                     <input type="submit" value="Iniciar sesión">
                 </form>
                 <div id="registro">
