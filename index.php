@@ -39,25 +39,16 @@
             <a href="logoff.php"><img src="img/cerrar.png"></a>
         </div>
     </div>
-    <!--<div id="menu">
+    <div class="me">
         <ul>
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-            <li><a href="index.php" class="current">Inicio</a></li>
+            <li><a href="index.php">Inicio</a></li>
             <li><a href="favs.php">Favoritos</a></li>
             <li><a href="usuarios.php">Usuarios</a></li>
             <li><a href="libros.php">Libros</a></li>
             <li><a href="cuenta.php">Cuenta</a></li>
-=======
-            <li><a href="#index" class="current">Inicio</a></li>
-            <li><a href="#favs">Favoritos</a></li>
-            <li><a href="#usuarios">Usuarios</a></li>
-            <li><a href="#libros">Libros</a></li>
-            <li><a href="#cuenta">Cuenta</a></li>
->>>>>>> Stashed changes
         </ul>
-    </div>-->
-    <div class="me">
+    </div>
+    <!--<div class="me">
         <ul>
             <li><a href="">Inicio</a></li>
             <li><a href="">Favoritos</a></li>
@@ -65,12 +56,12 @@
             <li><a href="">Libros</a></li>
             <li><a href="">Cuenta</a></li>
         </ul>
-    </div>
+    </div>-->
     <div id="find">
         <img src="img/lupa.png">
         <input type="text" placeholder="¿Qué buscas?">
     </div>
-    <div id="favs">
+    <!--<div id="favs">
         <h1 >Favoritos</h1>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </div>
@@ -85,6 +76,6 @@
     <div id="cuenta">
         <h1 >Cuenta</h1>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    </div>
+    </div>-->
 </body>
 </html>
