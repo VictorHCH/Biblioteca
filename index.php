@@ -28,11 +28,11 @@
     </div>
     <div id="menu">
         <ul>
-            <li><a href="index.php" class="current">Inicio</a></li>
-            <li><a href="favs.php">Favoritos</a></li>
-            <li><a href="usuarios.php">Usuarios</a></li>
-            <li><a href="libros.php">Libros</a></li>
-            <li><a href="cuenta.php">Cuenta</a></li>
+            <li><a href="#index" class="current">Inicio</a></li>
+            <li><a href="#favs">Favoritos</a></li>
+            <li><a href="#usuarios">Usuarios</a></li>
+            <li><a href="#libros">Libros</a></li>
+            <li><a href="#cuenta">Cuenta</a></li>
         </ul>
 </div>
     <div id="find">
@@ -40,7 +40,20 @@
         <input type="text" placeholder="¿Qué buscas?">
     </div>
     <div>
-        
+        <h1 id="favs">Favoritos</h1>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+    <div>
+        <h1 id="usuarios">Usuarios</h1>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+    <div >
+        <h1 id="libros">Libros</h1>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+    <div >
+        <h1 id="cuenta">Cuenta</h1>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </div>
 </body>
 </html>
