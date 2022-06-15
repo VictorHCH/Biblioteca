@@ -326,7 +326,7 @@ body {
     border-color: transparent;
 }
 
-#menu {
+.me {
     left: 320px;
     bottom: 0;
     display: flex;
@@ -334,19 +334,67 @@ body {
     justify-content: center;
 }
 
-#menu ul{
+.me ul {
     list-style-type: none;
     margin: 0;
     padding-top: 1%;
 }
 
-#menu li {
+.me ul li {
     float: left;
     margin-right: 5px;
     margin-left: 5px;
 }
 
-#menu a{
+.me ul li a {
+    font-family: Quicksand, sans-serif;
+    font-weight: 900;
+    font-size: 1.3em;
+    display: block;
+    background-color: #fff;
+    border-radius: 5px 5px 0 0;
+    color: #ff757c;
+    text-decoration: none;
+    padding: 0 20px 5px 20px;
+    margin-right: 10px;
+    line-height: 25px;
+    border: none;
+}
+
+.me ul li a:hover {
+    margin-top: -5px;
+    height: 30px;
+    color: #fff;
+    background-color: #ffca4f;
+    line-height: 25px;
+}
+
+.act {
+    background-color: #ffca4f;
+    color: #fff;
+}
+
+div.menu {
+    left: 320px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding-top: 1%;
+}
+
+.menu ul li {
+    float: left;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.menu ul li a{
     font-family: Quicksand, sans-serif;
     font-weight: 900;
     font-size: 1.3em;

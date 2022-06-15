@@ -18,6 +18,19 @@
     <title>Leyendo.com</title>
     <link href="estilos.css" rel="stylesheet" type="text/css">
     <link rel="icon" type="image/x-icon" href="img/Libro.ico">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="m.js"></script>
+    <!--<script>
+        $(document).ready(function(){
+            $('.me ul li a:first').addClass('active');
+
+            $('.me ul li a').click(function(){
+                $('.me ul li a').removeClass('active');
+                $(this).addClass('active');
+            });
+        });
+        //window.alert('Sí funciona')
+    </script>-->
 </head>
 <body id="index">
     <div id="logoIndex">
@@ -26,7 +39,7 @@
             <a href="logoff.php"><img src="img/cerrar.png"></a>
         </div>
     </div>
-    <div id="menu">
+    <!--<div id="menu">
         <ul>
             <li><a href="index.php" class="current">Inicio</a></li>
             <li><a href="favs.php">Favoritos</a></li>
@@ -34,21 +47,21 @@
             <li><a href="libros.php">Libros</a></li>
             <li><a href="cuenta.php">Cuenta</a></li>
         </ul>
-    </div>
-    <!--<div id="menu">
-        <ul>
-            <li><a href="#index" class="current">Inicio</a></li>
-            <li><a href="#favs">Favoritos</a></li>
-            <li><a href="#usuarios">Usuarios</a></li>
-            <li><a href="#libros">Libros</a></li>
-            <li><a href="#cuenta">Cuenta</a></li>
-        </ul>
     </div>-->
+    <div class="me">
+        <ul>
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Favoritos</a></li>
+            <li><a href="">Usuarios</a></li>
+            <li><a href="">Libros</a></li>
+            <li><a href="">Cuenta</a></li>
+        </ul>
+    </div>
     <div id="find">
         <img src="img/lupa.png">
         <input type="text" placeholder="¿Qué buscas?">
     </div>
-    <!--<div id="favs">
+    <div id="favs">
         <h1 >Favoritos</h1>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </div>
@@ -65,6 +78,6 @@
         <h1 >Cuenta</h1>
         <h1 >Cuenta</h1>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    </div>-->
+    </div>
 </body>
 </html>
