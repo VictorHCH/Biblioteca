@@ -39,20 +39,22 @@
         <img src="img/lupa.png">
         <input type="text" placeholder="¿Qué buscas?">
     </div>
-    <div>
-        <h1 id="favs">Favoritos</h1>
+    <div id="favs">
+        <h1 >Favoritos</h1>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </div>
-    <div>
-        <h1 id="usuarios">Usuarios</h1>
+    <div id="usuarios">
+        <h1 >Usuarios</h1>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </div>
-    <div >
-        <h1 id="libros">Libros</h1>
+    <div id="libros">
+        <h1 >Libros</h1>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </div>
-    <div >
-        <h1 id="cuenta">Cuenta</h1>
+    <div id="cuenta">
+        <h1 >Cuenta</h1>
+        <h1 >Cuenta</h1>
+        <h1 >Cuenta</h1>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </div>
 </body>
