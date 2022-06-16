@@ -27,9 +27,9 @@
         <p>Nombre: <span><?php echo $nombre?></span></p>
         <p>Usuario: <span><?php echo $usuario ?></span></p>
         <p>Tipo de usuario: <span><?php echo $tipoUsuario ?></span></p>
-        <div>
-            <a href="" class="btn_ok">Aceptar</a>
-            <a href="" class="btn_cancel">Cancelar</a>
-        </div>
+        <form method="post" action="">
+            <input type="submit" class="btn_ok" value="Aceptar">
+            <a href="usuarios.php" class="btn_cancel">Cancelar</a>
+        </form>
     </div>
 <?php require('includes/footer.php') ?>
