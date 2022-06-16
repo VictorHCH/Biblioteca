@@ -1,6 +1,6 @@
 <?php
+    include("includes/valida.php");
     include("conexion.php");
-    session_start();
     $id = $_SESSION['id'];
     $nombre = filter_input(0, 'nombre');
     $apellido = filter_input(0, 'apellido');

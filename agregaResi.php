@@ -1,6 +1,6 @@
 <?php
+    include("includes/valida.php");
     include("conexion.php");
-    
     //variables a subir
     $tema = filter_input(0,'tema');
     $imagen = addslashes(file_get_contents($_FILES['img']['tmp_name']));
