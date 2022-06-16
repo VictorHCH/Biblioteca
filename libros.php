@@ -3,20 +3,21 @@
     </div>
     <section id="container">
     <div>
-        <h1>Lista de Residencias</h1>
-        <a href="registerResidenciaAdmin.php" class="btn_new">Agregar Residencia</a>
+        <h1>Lista de libros</h1>
+        <a href="registerResidenciaAdmin.php" class="btn_new">Agregar libro</a>
+        <a href="reporte_lib.php" class="btn_new">Generar reporte</a>
     </div>
     <table>
         <tr>
             <th>ID</th>
             <th>Tema</th>
             <th>Descripción</th>
-            <th>Año</th>
+            <th>Fecha</th>
             <th>Autor(es)</th>
-            <th>Numero de Paginas</th>
+            <th>Número de páginas</th>
             <th>Link</th>
             <th>Favoritos</th>
-            <th>Leidos</th>
+            <th>Leídos</th>
             <th>Descargados</th>
             <th>Acciones</th>
         </tr>

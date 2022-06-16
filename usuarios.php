@@ -6,6 +6,7 @@
     <div>
         <h1>Lista de usuarios</h1>
         <a href="registerUsuarioAdmin.php" class="btn_new">Crear usuario</a>
+        <a href="reporte_usu.php" class="btn_new">Generar reporte</a>
     </div>
     <table>
         <tr>

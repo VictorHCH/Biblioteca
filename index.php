@@ -14,7 +14,6 @@
         <input type="text" placeholder="¿Qué buscas?">
     </div>
     <div class="container">
-    <h1>Session activa: <?php echo $_SESSION['idUsuario'] ?></h1>
         <ul class="slider">
             <li id="slide1"><a><img src="img/banner1.jpg"/></a></li>
             <li id="slide2"><a><img src="img/banner2.jpg"/></a></li>
