@@ -261,13 +261,13 @@ body {
     cursor: pointer;
 }
 
-/*index.php*/
-#index {
+/*header.php*/
+#header {
     margin: 0;
     padding: 0;
 }
 
-#logoIndex {
+#logoHeader {
     background-color: #ffca4f;
     width: 100%;
     display: flex;
@@ -289,7 +289,7 @@ body {
     float: right;
 }
 
-#logoIndex h1{
+#logoHeader h1{
     font-family: Cocogoose, sans-serif;
     color: #ffffff;
     padding: 1%;
@@ -299,6 +299,57 @@ body {
     object-fit: contain;*/
 }
 
+.menu {
+    left: 320px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding-top: 1%;
+}
+
+.menu ul li {
+    float: left;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.menu ul li a {
+    font-family: Quicksand, sans-serif;
+    font-weight: 900;
+    font-size: 1.3em;
+    display: block;
+    border-radius: 5px 5px 0 0;
+    text-decoration: none;
+    padding: 0 20px 5px 20px;
+    margin-right: 10px;
+    line-height: 25px;
+    border: none;
+}
+
+.menu ul li a.a1 {
+    color: #79DAE8;
+}  
+
+.menu ul li a:hover {
+    margin-top: -5px;
+    height: 30px;
+    color: #fff;
+    background-color: #ffca4f;
+    line-height: 25px;
+}
+
+.active {
+    background-color: #ffca4f;
+    color: #ffffff;
+}
+
+/*index.php*/
 #find {
     width: 100%;
     background-color: #ffca4f;
@@ -326,107 +377,70 @@ body {
     border-color: transparent;
 }
 
-.me {
-    left: 320px;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.me ul {
-    list-style-type: none;
-    margin: 0;
-    padding-top: 1%;
-}
-
-.me ul li {
-    float: left;
-    margin-right: 5px;
-    margin-left: 5px;
-}
-
-.me ul li a {
-    font-family: Quicksand, sans-serif;
-    font-weight: 900;
-    font-size: 1.3em;
-    display: block;
-    border-radius: 5px 5px 0 0;
+/*slider*/
+.container{
+    margin: auto;
+    background-color: white;
+    width: 1000px;
+    padding: 30px;
+  }
+  
+  ul, li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+  }
+  
+  ul.slider{
+    position: relative;
+    width: 1000px;
+    height: 300px;
+  }
+  
+  ul.slider li {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      opacity: 0;
+      width: inherit;
+      height: inherit;
+      transition: opacity .5s;
+      background:#fff;
+  }
+  
+  ul.slider li img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  ul.slider li:first-child {
+      opacity: 1; /*Mostramos el primer <li>*/
+  }
+  
+  ul.slider li:target {
+      opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+  }
+  
+  .ind{
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .ind li{
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .ind li a{
+    font-family: ITCAvantGarde, sans-serif;
+    display: inline-block;
+    color: white;
     text-decoration: none;
-    padding: 0 20px 5px 20px;
-    margin-right: 10px;
-    line-height: 25px;
-    border: none;
-}
-
-.me ul li a.a1 {
-    color: #ff757c;
-}  
-
-a:visited{
-    color: #ffffff;
-    background-color: #ffca4f;
-}
-
-
-.me ul li a:hover {
-    margin-top: -5px;
-    height: 30px;
-    color: #fff;
-    background-color: #ffca4f;
-    line-height: 25px;
-}
-
-
-.act {
-    background-color: #ffca4f;
-    color: #ffffff;
-}
-
-div.menu {
-    left: 320px;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-div.menu ul{
-    list-style-type: none;
-    margin: 0;
-    padding-top: 1%;
-}
-
-.menu ul li {
-    float: left;
-    margin-right: 5px;
-    margin-left: 5px;
-}
-
-.menu ul li a{
-    font-family: Quicksand, sans-serif;
-    font-weight: 900;
-    font-size: 1.3em;
-    display: block;
-    background-color: #ffffff;
-    border-radius: 5px 5px 0 0;
-    color: #ff757c;
-    text-decoration: none;
-    padding: 0 20px 5px 20px;
-    margin-right: 10px;
-    line-height: 25px;
-    border: none;
-}
-
-/*#menu li a {
-    color: #fff;
-    background-color: #ffca4f;
-}*/
-
-#menu a:hover{
-    margin-top: -5px;
-    height: 30px;
-    color: #ffffff;
-    background-color: #ffca4f;
-    line-height: 25px;
-}
+    background-color: #79DAE8;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+  }
