@@ -15,7 +15,7 @@
         <h1><?php echo $nombre?></h1>
         <label><b>Usuario:</b> <?php echo $mostrar['usuario']?></label><br>
         <label><b>Correo:</b> <?php echo $mostrar['correo']?></label><br>
-        <a href="register.php"><button>Modificar datos</button></a>
+        <a href="modificaUsuario.php?id=<?php echo $id?>"><button>Modificar datos</button></a>
     </div>
     <?php
         }

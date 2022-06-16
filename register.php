@@ -1,3 +1,4 @@
+<?php include("includes/valida.php")?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
