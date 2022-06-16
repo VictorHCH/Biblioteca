@@ -1,4 +1,4 @@
-<?php require('includes/header.php') ?>
+<?php require('includes/valida.php') ?>
     <div id="find">
     </div>
     <?php 

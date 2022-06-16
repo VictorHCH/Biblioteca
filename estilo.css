@@ -725,3 +725,29 @@ textarea{
     padding: 10px;
     height: 80px;
   }
+
+  div.cont_libros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  div.img{
+    width: 25%;
+  }
+
+  div.img img{
+    width: 100%;
+  }
+
+.frame{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+    width: 25%;
+}
+
+.frame iframe{
+    width: 100%;
+}

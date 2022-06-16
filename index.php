@@ -1,4 +1,4 @@
-<?php require('includes/header.php') ?>
+<?php require('includes/valida.php') ?>
 <div id="find">
     <img src="img/Lupa.png">
     <input type="text" placeholder="¿Qué buscas?">
@@ -22,6 +22,32 @@
     include("conexion.php");
     //Validacion de usuario y contraseña
     $consulta = "SELECT tema, imagen, descripcion FROM residencias";
+    $query = mysqli_query($conexion, $consulta);
+    $resultado = mysqli_num_rows($query);
+    //Si se encontro el usuario entra al index
+    if ($resultado) {
+        while ($data = mysqli_fetch_array($query)) {
+            $tema = $data['tema'];
+            $imagen = $data['imagen'];
+            $descripcion = $data['descripcion'];
+    ?>
+            <div class="galeria">
+                <div class="residencia">
+                    <img src="data:image/jpg;base64,<?php echo base64_encode($imagen) ?>" alt="">
+                </div>
+            </div>
+    <?php
+        }
+    }
+    ?>
+</div>
+<div>
+    <h1 class="galeria">Top 5 mas leidos</h1>
+    <?php
+    //Se hace la conexion con la BD
+    include("conexion.php");
+    //Validacion de usuario y contraseña
+    $consulta = "SELECT tema, imagen, descripcion FROM residencias LIMIT 5";
     $query = mysqli_query($conexion, $consulta);
     $resultado = mysqli_num_rows($query);
     //Si se encontro el usuario entra al index

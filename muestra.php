@@ -50,7 +50,9 @@
                 ?>
             </tbody>
         </table>
-        <iframe src="https://drive.google.com/file/d/17oQmyEuZp6CaxDPj0iIKDRUtS0GVkoaf/preview?usp=sharing" frameborder="0"></iframe>
+        <div class="frame">
+            <iframe src="https://drive.google.com/file/d/17oQmyEuZp6CaxDPj0iIKDRUtS0GVkoaf/preview?usp=sharing" frameborder="0"></iframe>
+        </div>
     </center>
 </body>
 </html>
