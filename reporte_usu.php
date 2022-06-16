@@ -27,7 +27,7 @@ if (!isset($_SESSION["tipo"]) || $_SESSION["tipo"] == 0) {
             $nombre = $mostrar['nombre']."<br>".$mostrar['apellido'];
     ?>
     <p style="text-align: right; font-weight: bold; color: #79DAE8">Fecha del reporte: <?php echo $fechaActual ?></p>
-    <p style="text-align: right; font-weight: bold; color: #79DAE8">Fecha del reporte: <?php echo $nombre ?></p>
+    <p style="text-align: right; font-weight: bold; color: #79DAE8">Encargado del reporte: <?php echo $nombre ?></p>
     <?php
         }
     }
