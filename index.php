@@ -1,6 +1,6 @@
 <?php require('includes/header.php') ?>
     <div id="find">
-        <img src="img/lupa.png">
+        <img src="img/Lupa.png">
         <input type="text" placeholder="¿Qué buscas?">
     </div>
     <div class="container">
