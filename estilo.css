@@ -289,15 +289,25 @@ body {
 
 #cerrar {
     object-fit: contain;
-    /*background-color: #00b1cc;*/
     padding: 1%;
     width: 100%;
+    height: 40px;
 }
 
 #cerrar img {
     object-fit: contain;
-    height: 40px;
+    height: 100%;
     float: right;
+}
+
+#cerrar label {
+    object-fit: contain;
+    float: right;
+    margin: 8px;
+    padding: 2px 5px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    font-family: ITCAvantGarde, sans-serif;
 }
 
 #logoHeader h1{
@@ -603,4 +613,56 @@ footer h1 {
 
 .btn_cancel:hover {
     background-color: #ffd980;
+}
+
+/*cuenta.php*/
+#cuenta {
+    background-color: #79DAE8;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5%;
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 10px;
+    box-shadow: 20px 20px 10px rgb(139, 139, 139);
+}
+
+#cuenta h1 {
+    font-family: Quicksand, sans-serif;
+    font-weight: bolder;
+    color: #fff;
+}
+
+#cuenta label {
+    font-family: ITCAvantGarde, sans-serif;
+    color: black;
+    font-size: 1.1em;
+}
+
+#cuenta br {
+    padding: 10px;
+}
+
+#cuenta button {
+    object-fit: contain;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    height: 35px;
+    padding-left: 0 auto;
+    padding-right: 0 auto;
+    border-radius: 20px 20px 20px 20px;
+    border-color: transparent;
+    font-family: ITCAvantGarde, sans-serif;
+    background-color: #ff757c;
+    color: white;
+}
+
+#cuenta button:hover {
+    transform: translate(0, -5px);
+    transition-duration: 1s;
+    background-color: #fb979c;
+    color: black;
+    cursor: pointer;
 }

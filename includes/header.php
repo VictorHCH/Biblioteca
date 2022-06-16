@@ -25,6 +25,7 @@
         <h1>Leyendo.com</h1>
         <div id="cerrar">
             <a href="logoff.php"><img src="img/cerrar.png"></a>
+            <label><?php echo $_SESSION['usuario'] ?></label>
         </div>
     </div>
     <div class="menu">
