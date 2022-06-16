@@ -34,7 +34,7 @@
                         <tr>
                             <td><?php echo $row['idResidencia']?></td>
                             <td><?php echo $row['tema']?></td>
-                            <td><img src="data:image/jpg;base64,<?php echo base64_decode($row['imagen'])?>"></td>
+                            <td><img src="data:image/jpg;base64,<?php echo base64_encode($row['imagen'])?>"></td>
                             <td><?php echo $row['descripcion']?></td>
                             <td><?php echo $row['año']?></td>
                             <td><?php echo $row['autores']?></td>
@@ -50,7 +50,7 @@
                 ?>
             </tbody>
         </table>
-        <a href="https://drive.google.com/file/d/17oQmyEuZp6CaxDPj0iIKDRUtS0GVkoaf/view?usp=sharing">Libro</a>
+        <iframe src="https://drive.google.com/file/d/17oQmyEuZp6CaxDPj0iIKDRUtS0GVkoaf/preview?usp=sharing" frameborder="0"></iframe>
     </center>
 </body>
 </html>

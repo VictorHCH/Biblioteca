@@ -351,15 +351,23 @@ body {
     font-weight: 900;
     font-size: 1.3em;
     display: block;
-    background-color: #fff;
     border-radius: 5px 5px 0 0;
-    color: #ff757c;
     text-decoration: none;
     padding: 0 20px 5px 20px;
     margin-right: 10px;
     line-height: 25px;
     border: none;
 }
+
+.me ul li a.a1 {
+    color: #ff757c;
+}  
+
+a:visited{
+    color: #ffffff;
+    background-color: #ffca4f;
+}
+
 
 .me ul li a:hover {
     margin-top: -5px;
@@ -369,9 +377,10 @@ body {
     line-height: 25px;
 }
 
+
 .act {
     background-color: #ffca4f;
-    color: #fff;
+    color: #ffffff;
 }
 
 div.menu {
