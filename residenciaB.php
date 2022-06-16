@@ -36,8 +36,8 @@
     </div>
     <div class="data_delete">
         <h2>¿Estás seguro de eliminar la siguiente residencia?</h2>
-        <p>Tema: <span><?php echo $tema?></span></p>
-        <!-- <p>Descripcion: <span><?php echo $descripcion ?></span></p> -->
+        <!--<p>Tema: <span><?php echo $tema?></span></p>
+        <p>Descripcion: <span><?php echo $descripcion ?></span></p> -->
         <img src="data:image/jpg;base64,<?php echo base64_encode($imagen)?>" width="45%">
         <form method="post" action="">
             <input type="hidden" name="idresidencia" value="<?php echo $idresidencia ?>">
