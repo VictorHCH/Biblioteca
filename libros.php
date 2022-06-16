@@ -14,8 +14,13 @@
             <th>Descripción</th>
             <th>Fecha</th>
             <th>Autor(es)</th>
+<<<<<<< Updated upstream
             <th>Número de páginas</th>
             <th>Link</th>
+=======
+            <th>Numero de Paginas</th>
+            <!-- <th>Link</th> -->
+>>>>>>> Stashed changes
             <th>Favoritos</th>
             <th>Leídos</th>
             <th>Descargados</th>
@@ -34,14 +39,14 @@
             <td><?php echo $data['idResidencia'] ?></td>
             <td><?php echo $data['tema'] ?></td>
             <td><?php echo $data['descripcion'] ?></td>
-            <td><?php echo $data['año'] ?></td>
+            <td style="width: 6%;"><?php echo $data['año'] ?></td>
             <td><?php echo $data['autores'] ?></td>
             <td><?php echo $data['nPaginas'] ?></td>
-            <td><?php echo $data['link'] ?></td>
+            
             <td><?php echo $data['favoritos'] ?></td>
             <td><?php echo $data['leidos'] ?></td>
             <td><?php echo $data['descargados'] ?></td>
-            <td>
+            <td style="width: 9%;">
                 <a class="link_edit" href="residenciaE.php?id=<?php echo $data['idResidencia'] ?>">Editar</a> |
                 <a class="link_delete" href="residenciaB.php?id=<?php echo $data['idResidencia'] ?>">Eliminar</a>
             </td>
