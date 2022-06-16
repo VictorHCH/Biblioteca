@@ -37,6 +37,23 @@ if ($resultado == 0) {
     <title>Leyendo.com</title>
     <link href="estilo.css" rel="stylesheet" type="text/css">
     <link rel="icon" type="image/x-icon" href="img/Libro.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        $(document)
+            .one('focus.autoExpand', 'textarea.autoExpand', function() {
+                var savedValue = this.value;
+                this.value = '';
+                this.baseScrollHeight = this.scrollHeight;
+                this.value = savedValue;
+            })
+            .on('input.autoExpand', 'textarea.autoExpand', function() {
+                var minRows = this.getAttribute('data-min-rows') | 0,
+                    rows;
+                this.rows = minRows;
+                rows = Math.ceil((this.scrollHeight - this.baseScrollHeight) / 17);
+                this.rows = minRows + rows;
+            });
+    </script>
 </head>
 
 <body>
@@ -44,17 +61,16 @@ if ($resultado == 0) {
         <h1>Leyendo.com</h1>
     </div>
     <center>
-        <form action="registerResidenciaAdmin.php" method="post" enctype="multipart/form-data">
-            Tema: <input type="text" requiered name="tema" value="<?php echo $tema ?>"><br><br>
+        <form action="residenciaEBD.php" method="post" enctype="multipart/form-data">
+            Tema: <textarea class='autoExpand' rows='3' data-min-rows='3' placeholder='Auto-Expanding Textarea' name="tema"><?php echo $tema ?></textarea>
             Imagen: <input type="file" requiered name="img"><br><br>
-            Descripción: <textarea requiered name="desc" cols="30" rows="10"><?php echo $descripcion ?></textarea><br><br>
+            Descripción: <textarea class='autoExpand' rows='8' data-min-rows='3' placeholder='Auto-Expanding Textarea' name="desc"><?php echo $descripcion ?></textarea>
             Año: <input type="date" requiered name="fecha" value="<?php echo $año ?>"><br><br>
-            Autores: <textarea name="autores" requiered id="1" cols="30" rows="10" ><?php echo $autores ?></textarea><br><br>
+            Autores: <textarea class='autoExpand' rows='3' data-min-rows='3' placeholder='Auto-Expanding Textarea' name="autores"><?php echo $autores ?></textarea>
             Numero de paginas : <input type="number" requiered name="numpag" value="<?php echo $nPaginas ?>"><br><br>
-            Link: <input type="text" name="link" requiered value="<?php echo $link ?>">
+            Link: <textarea class='autoExpand' rows='3' data-min-rows='3' placeholder='Auto-Expanding Textarea' name="link"><?php echo $link ?>"></textarea>
             <input type="submit" value="Enviar">
         </form>
     </center>
 </body>
-
 </html>

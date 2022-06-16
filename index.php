@@ -1,4 +1,14 @@
 <?php require('includes/header.php') ?>
+<?php
+    if(isset($_SESSION['tipo'])){
+        if($_SESSION['tipo'] == 0){
+            header('Location: login.php');
+        }
+    }
+    else{
+        header('Location: login.php');
+    }
+?>
     <div id="find">
         <img src="img/Lupa.png">
         <input type="text" placeholder="¿Qué buscas?">
