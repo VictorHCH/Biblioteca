@@ -1,8 +1,19 @@
 <?php
+    include("conexion.php");
+    if(!empty($_POST)){
+        $idusuario = $_POST['idUsuario'];
+        $consulta = "DELETE FROM usuarios WHERE idUsuario = '$idusuario'";
+        $query = mysqli_query($conexion, $consulta);
+        if($query){
+            header("Location: usuarios.php");
+        }else{
+            echo "Error al eliminar";
+        }
+
+    }
     if(empty($_REQUEST['id'])){
         header("Location: usuarios.php");
     }else{
-        include("conexion.php");
         $idusuario = $_REQUEST['id'];
         $consulta = "SELECT nombre, apellido, usuario, tipoUsuario FROM usuarios WHERE idUsuario='$idusuario'";
         $query = mysqli_query($conexion, $consulta);
@@ -28,6 +39,7 @@
         <p>Usuario: <span><?php echo $usuario ?></span></p>
         <p>Tipo de usuario: <span><?php echo $tipoUsuario ?></span></p>
         <form method="post" action="">
+            <input type="hidden" name="idUsuario" value="<?php echo $idusuario?>">
             <input type="submit" class="btn_ok" value="Aceptar">
             <a href="usuarios.php" class="btn_cancel">Cancelar</a>
         </form>
