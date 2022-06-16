@@ -50,7 +50,7 @@ if ($resultado == 0) {
                 <input type="email" name="email" placeholder="Correo..." value="<?php echo $correo; ?>"><br />
                 <label>Usuario</label><br />
                 <input type="text" name="usuario" placeholder="Usuario..." value="<?php echo $usuario; ?>"><br />
-                <label>Tipó</label>
+                <label>Tipo</label>
                 <select name="tipo">
                     <option value="1">Usuario</option>
                     <?php
@@ -69,7 +69,7 @@ if ($resultado == 0) {
                 <input type="password" name="pass1" placeholder="Contraseña..."><br />
                 <label>Confirmar contraseña</label><br />
                 <input type="password" name="pass2" placeholder="Contraseña..."><br />
-                <input type="submit" value="Actualizar Usuario">
+                <input type="submit" value="Actualizar usuario">
             </form>
         </div>
     </div>

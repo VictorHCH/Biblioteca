@@ -23,7 +23,7 @@
                 <input type="email" name="email" placeholder="Correo..."><br/>
                 <label>Usuario</label><br/>
                 <input type="text" name="usuario" placeholder="Usuario..."><br/>
-                <label>Tipó</label>
+                <label>Tipo</label><br>
                 <select name="tipo"><option value="1">Usuario</option><option value="2">Administrador</option></select><br>
                 <label>Contraseña</label><br/>
                 <input type="password" name="pass1" placeholder="Contraseña..."><br/>

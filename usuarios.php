@@ -3,11 +3,13 @@
 <div id="find">
 </div>
 <section id="container">
-    <h1>Lista de usuarios</h1>
-    <a href="registerUsuarioAdmin.php" class="btn_new">Crear usuario</a>
+    <div>
+        <h1>Lista de usuarios</h1>
+        <a href="registerUsuarioAdmin.php" class="btn_new">Crear usuario</a>
+    </div>
     <table>
         <tr>
-            <th>Id</th>
+            <th>ID</th>
             <th>Usuario</th>
             <th>Nombre</th>
             <th>Apellido</th>

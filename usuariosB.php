@@ -23,13 +23,13 @@
     <div id="find">
     </div>
     <div class="data_delete">
-        <h2>¿Esta seguro de eliminar el siguiente registro?</h2>
+        <h2>¿Estás seguro de eliminar el siguiente registro?</h2>
         <p>Nombre: <span><?php echo $nombre?></span></p>
         <p>Usuario: <span><?php echo $usuario ?></span></p>
-        <p>Tipo Usuario: <span><?php echo $tipoUsuario ?></span></p>
-        <form action="">
-            <a href="usuarios.php" class="btn_cancel">Cancelar</a>
-            <input type="submit" value="Aceptar" class="btn_ok">
-        </form>
+        <p>Tipo de usuario: <span><?php echo $tipoUsuario ?></span></p>
+        <div>
+            <a href="" class="btn_ok">Aceptar</a>
+            <a href="" class="btn_cancel">Cancelar</a>
+        </div>
     </div>
 <?php require('includes/footer.php') ?>
