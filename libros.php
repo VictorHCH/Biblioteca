@@ -42,7 +42,7 @@
             <td><?php echo $data['descargados'] ?></td>
             <td>
                 <a class="link_edit" href="residenciaE.php?id=<?php echo $data['idResidencia'] ?>">Editar</a> |
-                <a class="link_delete" href="usuariosB.php?id=<?php echo $data['idResidencia'] ?>">Eliminar</a>
+                <a class="link_delete" href="residenciaB.php?id=<?php echo $data['idResidencia'] ?>">Eliminar</a>
             </td>
         </tr>
         <?php
