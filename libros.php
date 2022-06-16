@@ -14,13 +14,8 @@
             <th>Descripción</th>
             <th>Fecha</th>
             <th>Autor(es)</th>
-<<<<<<< Updated upstream
-            <th>Número de páginas</th>
-            <th>Link</th>
-=======
             <th>Numero de Paginas</th>
             <!-- <th>Link</th> -->
->>>>>>> Stashed changes
             <th>Favoritos</th>
             <th>Leídos</th>
             <th>Descargados</th>
