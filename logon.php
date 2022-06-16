@@ -17,8 +17,8 @@
     if($resultado){ 
         while($data = mysqli_fetch_array($query)){
             $_SESSION['idUsuario'] = $data['idUsuario'];
+            $_SESSION['tipo'] = $data['tipoUsuario'];
         }
-        $_SESSION['tipo'] = 2;
     }else{
         $_SESSION['tipo'] = 0;
     }
