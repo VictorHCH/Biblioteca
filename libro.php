@@ -36,7 +36,7 @@
             Autor(es)<label><?php echo $autores ?></label><br>
             Fecha: <label><?php echo $año ?></label><br>
             Numero de pagina: <label><?php echo $nPaginas ?></label>
-            <a href=""><button>Leer</button></a>
+            <a href="<?php echo $link ?>"><button>Leer</button></a>
             <a href=""><button>Descargar</button></a>
             <a href=""><button>Favoritos</button></a>
         </div>

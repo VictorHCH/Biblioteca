@@ -21,7 +21,7 @@
     //Se hace la conexion con la BD
     include("conexion.php");
     //Validacion de usuario y contraseña
-    $consulta = "SELECT tema, imagen, descripcion FROM residencias";
+    $consulta = "SELECT idResidencia, tema, imagen, descripcion FROM residencias";
     $query = mysqli_query($conexion, $consulta);
     $resultado = mysqli_num_rows($query);
     //Si se encontro el usuario entra al index
@@ -30,10 +30,11 @@
             $tema = $data['tema'];
             $imagen = $data['imagen'];
             $descripcion = $data['descripcion'];
+            $idRed = $data['idResidencia'];
     ?>
             <div class="galeria">
                 <div class="residencia">
-                    <img src="data:image/jpg;base64,<?php echo base64_encode($imagen) ?>" alt="">
+                <a href="libro.php?id=<?php echo $idRed ?>"><img src="data:image/jpg;base64,<?php echo base64_encode($imagen) ?>" alt=""></a>
                 </div>
             </div>
     <?php
@@ -41,13 +42,14 @@
     }
     ?>
 </div>
-<div>
-    <h1 class="galeria">Top 5 mas leidos</h1>
+
+<div id="leidos">
+    <h1 class="galeria">Top 5 Libros mas Leidos</h1>
     <?php
     //Se hace la conexion con la BD
     include("conexion.php");
     //Validacion de usuario y contraseña
-    $consulta = "SELECT tema, imagen, descripcion FROM residencias LIMIT 5";
+    $consulta = "SELECT idResidencia, tema, imagen, descripcion, leidos FROM residencias ORDER BY leidos DESC LIMIT 5";
     $query = mysqli_query($conexion, $consulta);
     $resultado = mysqli_num_rows($query);
     //Si se encontro el usuario entra al index
@@ -56,10 +58,67 @@
             $tema = $data['tema'];
             $imagen = $data['imagen'];
             $descripcion = $data['descripcion'];
+            $idRed = $data['idResidencia'];
     ?>
             <div class="galeria">
                 <div class="residencia">
-                    <img src="data:image/jpg;base64,<?php echo base64_encode($imagen) ?>" alt="">
+                    <a href="libro.php?id=<?php echo $idRed ?>"><img src="data:image/jpg;base64,<?php echo base64_encode($imagen) ?>" alt=""></a>
+                </div>
+            </div>
+    <?php
+        }
+    }
+    ?>
+</div>
+
+<div id="descargados">
+    <h1 class="galeria">Top 5 Libros mas Descargados</h1>
+    <?php
+    //Se hace la conexion con la BD
+    include("conexion.php");
+    //Validacion de usuario y contraseña
+    $consulta = "SELECT idResidencia, tema, imagen, descripcion, descargados FROM residencias ORDER BY descargados DESC LIMIT 5";
+    $query = mysqli_query($conexion, $consulta);
+    $resultado = mysqli_num_rows($query);
+    //Si se encontro el usuario entra al index
+    if ($resultado) {
+        while ($data = mysqli_fetch_array($query)) {
+            $tema = $data['tema'];
+            $imagen = $data['imagen'];
+            $descripcion = $data['descripcion'];
+            $idRed = $data['idResidencia'];
+    ?>
+            <div class="galeria">
+                <div class="residencia">
+                    <a href="libro.php?id=<?php echo $idRed ?>"><img src="data:image/jpg;base64,<?php echo base64_encode($imagen) ?>" alt=""></a>
+                </div>
+            </div>
+    <?php
+        }
+    }
+    ?>
+</div>
+
+<div id="favoritos">
+    <h1 class="galeria">Top 5 Libros Favoritos</h1>
+    <?php
+    //Se hace la conexion con la BD
+    include("conexion.php");
+    //Validacion de usuario y contraseña
+    $consulta = "SELECT idResidencia, tema, imagen, descripcion, favoritos FROM residencias ORDER BY favoritos DESC LIMIT 5";
+    $query = mysqli_query($conexion, $consulta);
+    $resultado = mysqli_num_rows($query);
+    //Si se encontro el usuario entra al index
+    if ($resultado) {
+        while ($data = mysqli_fetch_array($query)) {
+            $tema = $data['tema'];
+            $imagen = $data['imagen'];
+            $descripcion = $data['descripcion'];
+            $idRed = $data['idResidencia'];
+    ?>
+            <div class="galeria">
+                <div class="residencia">
+                    <a href="libro.php?id=<?php echo $idRed ?>"><img src="data:image/jpg;base64,<?php echo base64_encode($imagen) ?>" alt=""></a>
                 </div>
             </div>
     <?php
