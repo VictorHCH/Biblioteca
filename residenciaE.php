@@ -60,17 +60,26 @@ if ($resultado == 0) {
     <div id="logo">
         <h1>Leyendo.com</h1>
     </div>
-    <center>
-        <form action="residenciaEBD.php" method="post" enctype="multipart/form-data">
-            Tema: <textarea class='autoExpand' rows='3' data-min-rows='3' placeholder='Auto-Expanding Textarea' name="tema"><?php echo $tema ?></textarea>
-            Imagen: <input type="file" requiered name="img"><br><br>
-            Descripción: <textarea class='autoExpand' rows='8' data-min-rows='3' placeholder='Auto-Expanding Textarea' name="desc"><?php echo $descripcion ?></textarea>
-            Año: <input type="date" requiered name="fecha" value="<?php echo $año ?>"><br><br>
-            Autores: <textarea class='autoExpand' rows='3' data-min-rows='3' placeholder='Auto-Expanding Textarea' name="autores"><?php echo $autores ?></textarea>
-            Numero de paginas : <input type="number" requiered name="numpag" value="<?php echo $nPaginas ?>"><br><br>
-            Link: <textarea class='autoExpand' rows='3' data-min-rows='3' placeholder='Auto-Expanding Textarea' name="link"><?php echo $link ?>"></textarea>
-            <input type="submit" value="Enviar">
-        </form>
-    </center>
+    <div id="registerL">
+        <div id="formRegisL">
+            <form action="residenciaEBD.php" method="post" enctype="multipart/form-data">
+                <label>Tema</label><br>
+                <textarea class='autoExpand' rows='3' data-min-rows='3' placeholder='Auto-Expanding Textarea' name="tema"><?php echo $tema ?></textarea>
+                <label>Imagen:</label><br>
+                <input type="file" requiered name="img"><br><br>
+                <label>Descripción:</label><br>
+                <textarea class='autoExpand' rows='8' data-min-rows='3' placeholder='Auto-Expanding Textarea' name="desc"><?php echo $descripcion ?></textarea>
+                <label>Fecha:</label><br>
+                <input type="date" requiered name="fecha" value="<?php echo $año ?>"><br><br>
+                <label>Autor(es):</label><br>
+                <textarea class='autoExpand' rows='3' data-min-rows='3' placeholder='Auto-Expanding Textarea' name="autores"><?php echo $autores ?></textarea>
+                <label>Número de páginas:</label><br>
+                <input type="number" requiered name="numpag" value="<?php echo $nPaginas ?>"><br><br>
+                <label>Link:</label><br>
+                <textarea class='autoExpand' rows='3' data-min-rows='3' placeholder='Auto-Expanding Textarea' name="link"><?php echo $link ?>"></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
 </body>
 </html>
