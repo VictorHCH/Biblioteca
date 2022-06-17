@@ -1,3 +1,4 @@
+<?php require('includes/valida.php') ?>
 <?php
     include("conexion.php");
     if(!empty($_POST)){
@@ -30,7 +31,6 @@
     }
 ?>
 
-<?php require('includes/header.php') ?>
     <div id="find">
     </div>
     <div class="data_delete">

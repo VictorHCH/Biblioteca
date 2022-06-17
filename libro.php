@@ -31,6 +31,7 @@
         </div>
         <div class="contenido">
             <h1><?php echo $tema ?></h1>
+<<<<<<< Updated upstream
             <p><?php echo $descripcion ?></p><br>
             Autor(es): <p><?php echo $autores ?></p><br>
             Fecha: <p><?php echo $año ?></p><br>
@@ -40,6 +41,18 @@
                 <a href="" class="d"><button>Descargar</button></a>
                 <a href="" class="f"><button>Favoritos</button></a>
             </div>
+=======
+            <label><?php echo $descripcion ?></label><br>
+            Autor(es)<label><?php echo $autores ?></label><br>
+            Fecha: <label><?php echo $año ?></label><br>
+            Numero de pagina: <label><?php echo $nPaginas ?></label>
+            <a href="<?php echo $link ?>"><button>Leer</button></a>
+            <a href="https://drive.google.com/file/d/1WzpI4xNn6nEv4HUKb4OWNMPrmuGTu8iz/view" download="ejemplo.pgf"><button>Descargar</button></a>
+            <a href=""><button>Favoritos</button></a>
+        </div>
+        <div class="frame">
+            <iframe src="https://drive.google.com/file/d/17oQmyEuZp6CaxDPj0iIKDRUtS0GVkoaf/preview?usp=sharing" frameborder="0"></iframe>
+>>>>>>> Stashed changes
         </div>
     </div>
 <?php require('includes/footer.php') ?>

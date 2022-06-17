@@ -29,4 +29,10 @@
             <label><?php echo $usuario ?></label>
         </div>
     </div>
-    
+    <div class="menu">
+        <ul>
+            <li><a href="index.php" id="index.php" class="a1">Inicio</a></li>
+            <li><a href="favs.php" id="favs.php" class="a1">Favoritos</a></li>
+            <li><a href="cuenta.php" id="cuenta.php" class="a1">Cuenta</a></li>
+        </ul>
+    </div>
