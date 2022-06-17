@@ -97,6 +97,7 @@
                         <?php
                     }
                 ?>
+                <a href="index.php" class="l"><button>Regresar</button></a>
             </div>
         </div>
     </div>

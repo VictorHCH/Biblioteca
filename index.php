@@ -5,9 +5,9 @@
 </div>
 <div class="container">
     <ul class="slider">
-        <li id="slide1"><a><img src="img/banner1.jpg" /></a></li>
-        <li id="slide2"><a><img src="img/banner2.jpg" /></a></li>
-        <li id="slide3"><a><img src="img/banner3.jpg"></a></li>
+        <li id="slide1"><a href="#leidos"><img src="img/banner1.jpg"/></a></li>
+        <li id="slide2"><a href="#descargados"><img src="img/banner2.jpg"/></a></li>
+        <li id="slide3"><a href="#favoritos"><img src="img/banner3.jpg"></a></li>
     </ul>
     <ul class="ind">
         <li><a href="#slide1">1</a></li>
