@@ -917,7 +917,7 @@ textarea{
 #registerL {
     background-color: #ff757c;
     margin: 2% 20% 2% 20%;
-    height: 750px;
+    height: 800px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1031,6 +1031,7 @@ textarea{
     object-fit: contain;
     width: 100%;
     margin-top: 2%;
+    margin-bottom: 5%;
     height: 30px;
     padding-left: 0 auto;
     padding-right: 0 auto;
