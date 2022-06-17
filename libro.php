@@ -5,7 +5,6 @@
         header('Location: index.php');
     }
     $idRes = $_GET['id'];
-    echo $idRes;
     $consulta = "SELECT * FROM residencias WHERE idResidencia ='$idRes'";
     $query = mysqli_query($conexion, $consulta);
     $resultado = mysqli_num_rows($query);
@@ -32,16 +31,15 @@
         </div>
         <div class="contenido">
             <h1><?php echo $tema ?></h1>
-            <label><?php echo $descripcion ?></label><br>
-            Autor(es)<label><?php echo $autores ?></label><br>
-            Fecha: <label><?php echo $año ?></label><br>
-            Numero de pagina: <label><?php echo $nPaginas ?></label>
-            <a href=""><button>Leer</button></a>
-            <a href=""><button>Descargar</button></a>
-            <a href=""><button>Favoritos</button></a>
-        </div>
-        <div class="frame">
-            <iframe src="https://drive.google.com/file/d/17oQmyEuZp6CaxDPj0iIKDRUtS0GVkoaf/preview?usp=sharing" frameborder="0"></iframe>
+            <p><?php echo $descripcion ?></p><br>
+            Autor(es): <p><?php echo $autores ?></p><br>
+            Fecha: <p><?php echo $año ?></p><br>
+            Número de páginas: <p><?php echo $nPaginas ?></p><br>
+            <div class="botones">
+                <a href="" class="l"><button>Leer</button></a>
+                <a href="" class="d"><button>Descargar</button></a>
+                <a href="" class="f"><button>Favoritos</button></a>
+            </div>
         </div>
     </div>
 <?php require('includes/footer.php') ?>

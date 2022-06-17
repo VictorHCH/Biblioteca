@@ -1,3 +1,15 @@
+<?php
+    include("conexion.php");
+    $id = $_SESSION['idUsuario'];
+    $consulta = "SELECT usuario FROM usuarios where idUsuario='$id'";
+    $query = mysqli_query($conexion, $consulta);
+    $resultado = mysqli_num_rows($query);
+    if ($resultado) {
+        while ($data = mysqli_fetch_array($query)) {
+            $usuario = $data['usuario'];
+        }
+    }
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +26,7 @@
         <h1>Leyendo.com</h1>
         <div id="cerrar">
             <a href="logoff.php"><img src="img/cerrar.png"></a>
-            <label><?php echo $_SESSION['usuario'] ?></label>
+            <label><?php echo $usuario ?></label>
         </div>
     </div>
     <div class="menu">
