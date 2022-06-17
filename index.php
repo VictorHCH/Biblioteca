@@ -1,8 +1,6 @@
 <?php require('includes/valida.php') ?>
 <div id="find">
-    <img src="img/Lupa.png">
-    <input type="text" placeholder="¿Qué buscas?">
-</div>
+    </div>
 <div class="container">
     <ul class="slider">
         <li id="slide1"><a href="#leidos"><img src="img/banner1.jpg"/></a></li>
