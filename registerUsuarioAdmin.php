@@ -58,6 +58,7 @@
                 <label>Confirmar contraseña</label><br/>
                 <input type="password" name="pass2" placeholder="Contraseña..."><br/>
                 <input type="submit" value="Registrarse">
+                <a href="usuarios.php" class="g"><button>Regresar</button></a>
             </form>
         </div>
     </div>

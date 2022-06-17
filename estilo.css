@@ -176,7 +176,7 @@ body {
 #register {
     background-color: #ff757c;
     margin: 2% 20% 2% 20%;
-    height: 550px;
+    height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -697,16 +697,18 @@ textarea{
   /*========================= Galeria de residencias =========================*/
   h1.galeria {
     text-align: center;
-    color: #fff;
-    text-shadow: 1px 2px 2px #000, 0 0 25px blue, 0 0 5px blue;
-    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: Cocogoose, sans-serif;
   }
 
   div.galeria{
     margin: 10px 20px;
-    box-shadow: 0 4px 8px 0 lightskyblue, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     float: left;
     width: 17%;
+  }
+
+  div.galeria:hover{
+    box-shadow: 15px 10px 10px rgb(139, 139, 139);
   }
 
   div.galeria img{
@@ -851,6 +853,37 @@ textarea{
 }
 
 .f:hover {
+    color: black;
+}
+
+.g button {
+    margin: 0 90px 0 90px;
+    object-fit: contain;
+    width: 50%;
+    height: 35px;
+    margin-top: 3%;
+    border-radius: 20px 20px 20px 20px;
+    border-color: transparent;
+    font-family: ITCAvantGarde, sans-serif;
+    background-color: #ffca4f;
+    color: #fff;
+  }
+
+  .g {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+  }
+
+  .g button:hover {
+    transform: translate(0, -5px);
+    transition-duration: 1s;
+    background-color: #ffd980;
+    cursor: pointer;
+    color: #000;
+}
+
+.g:hover {
     color: black;
 }
 
