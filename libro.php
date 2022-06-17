@@ -80,6 +80,7 @@
                 <a href="" class="l"><button>Leer</button></a>
                 <a href="" class="d"><button>Descargar</button></a>
                 <a href="" class="f"><button>Favoritos</button></a>
+                <a href="index.php" class="l"><button>Regresar</button></a>
             </div>
         </div>
     </div>

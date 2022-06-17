@@ -115,6 +115,7 @@ if ($resultado == 0) {
                 <label>Link:</label><br>
                 <textarea class='autoExpand' rows='3' data-min-rows='3' placeholder='Auto-Expanding Textarea' name="link"><?php echo $link ?>"></textarea>
                 <input type="submit" value="Enviar">
+                <a href="libros.php" class="g"><button>Regresar</button></a>
             </form>
         </div>
     </div>
