@@ -2,7 +2,6 @@
     <div id="find">
     </div>
     <div>
-    <h1 class="galeria">Galeria de Residencias</h1>
     <?php
     //Se hace la conexion con la BD
     include("conexion.php");

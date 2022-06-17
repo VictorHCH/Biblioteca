@@ -16,7 +16,7 @@
     </ul>
 </div>
 <div>
-    <h1 class="galeria">Galeria de Residencias</h1>
+    <h1 class="galeria">Libros disponibles</h1>
     <?php
     //Se hace la conexion con la BD
     include("conexion.php");
@@ -44,7 +44,7 @@
 </div>
 
 <div id="leidos">
-    <h1 class="galeria">Top 5 Libros mas Leidos</h1>
+    <h1 class="galeria">Libros más leídos</h1>
     <?php
     //Se hace la conexion con la BD
     include("conexion.php");
@@ -72,7 +72,7 @@
 </div>
 
 <div id="descargados">
-    <h1 class="galeria">Top 5 Libros mas Descargados</h1>
+    <h1 class="galeria">Libros más descargados</h1>
     <?php
     //Se hace la conexion con la BD
     include("conexion.php");
@@ -100,7 +100,7 @@
 </div>
 
 <div id="favoritos">
-    <h1 class="galeria">Top 5 Libros Favoritos</h1>
+    <h1 class="galeria">Libros favoritos</h1>
     <?php
     //Se hace la conexion con la BD
     include("conexion.php");
