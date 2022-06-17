@@ -77,9 +77,26 @@
             Fecha: <p><?php echo $año ?></p><br>
             Número de páginas: <p><?php echo $nPaginas ?></p><br>
             <div class="botones">
-                <a href="" class="l"><button>Leer</button></a>
-                <a href="" class="d"><button>Descargar</button></a>
-                <a href="" class="f"><button>Favoritos</button></a>
+                <a href="leer.php?id=<?php echo $idRes ?>" target="_blank" class="l"><button>Leer</button></a>
+                <a href="descarga.php?id=<?php echo $idRes ?>" class="d"><button>Descargar</button></a>
+                <?php
+                    include("conexion.php");
+                    $id = $_SESSION['idUsuario'];
+                    $consulta = "SELECT r.idResidencia, r.imagen FROM residencias r INNER JOIN favoritos f ON f.idResidencia = r.idResidencia INNER JOIN usuarios u ON 
+                                u.idUsuario = f.idUsuario WHERE u.idUsuario = '$id' AND r.idResidencia = '$idRes'";
+                    $query = mysqli_query($conexion, $consulta);
+                    $resultado = mysqli_num_rows($query);
+                    if ($resultado) {
+                        ?>
+                            <a href="nofavoritos.php?id=<?php echo $idRes ?>" class="f"><button>No Favorito</button></a>
+                        <?php
+                    }
+                    else{
+                        ?>
+                            <a href="favoritos.php?id=<?php echo $idRes ?>" class="f"><button>Favoritos</button></a>
+                        <?php
+                    }
+                ?>
             </div>
         </div>
     </div>
