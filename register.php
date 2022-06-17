@@ -1,4 +1,3 @@
-<?php include("includes/valida.php")?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,6 +28,7 @@
                 <label>Confirmar contraseña</label><br/>
                 <input type="password" name="pass2" placeholder="Contraseña..."><br/>
                 <input type="submit" value="Registrarse">
+                <a href="login.php" class="g">Regresar</a>
             </form>
         </div>
     </div>

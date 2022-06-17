@@ -58,7 +58,7 @@
                 <label>Link:</label><br>
                 <input type="text" name="link" requiered value="" placeholder="Link...">
                 <input type="submit" value="Enviar">
-                <a href="libros.php" class="g"><button>Regresar</button></a>
+                <a href="libros.php" class="g">Regresar</a>
             </form>
         </div>
     </div>

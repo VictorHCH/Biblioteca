@@ -42,7 +42,7 @@
     </div>    
     <div id="register">
         <div id="formRegis">
-            <form action="registerUsuarioPri.php" method="post">
+            <form action="registerUsuarioPri.php" method="post" enctype="multipart/form-data">
                 <label>Nombre</label><br/>
                 <input type="text" name="nombre" placeholder="Nombre..."><br/>
                 <label>Apellido</label><br/>
@@ -58,7 +58,7 @@
                 <label>Confirmar contraseña</label><br/>
                 <input type="password" name="pass2" placeholder="Contraseña..."><br/>
                 <input type="submit" value="Registrarse">
-                <a href="usuarios.php" class="g"><button>Regresar</button></a>
+                <a href="usuarios.php" class="g">Regresar</a>
             </form>
         </div>
     </div>
