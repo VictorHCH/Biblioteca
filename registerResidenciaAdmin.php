@@ -1,17 +1,45 @@
-<?php include("includes/valida.php") ?>
+<?php
+    session_start();
+    if(isset($_SESSION['tipo'])){
+        if($_SESSION['tipo'] == 0){
+            header('Location: login.php');
+        }
+    }
+    else{
+        header('Location: login.php');
+    }
+?>
+<?php
+    include("conexion.php");
+    $id = $_SESSION['idUsuario'];
+    $consulta = "SELECT usuario FROM usuarios where idUsuario='$id'";
+    $query = mysqli_query($conexion, $consulta);
+    $resultado = mysqli_num_rows($query);
+    if ($resultado) {
+        while ($data = mysqli_fetch_array($query)) {
+            $usuario = $data['usuario'];
+        }
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leyendo.com</title>
     <link href="estilo.css" rel="stylesheet" type="text/css">
     <link rel="icon" type="image/x-icon" href="img/Libro.ico">
-    <title>Leyendo.com</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
-
-<body>
+<body id="header">
+    <div id="logoHeader">
+        <h1>Leyendo.com</h1>
+        <div id="cerrar">
+            <a href="logoff.php"><img src="img/cerrar.png"></a>
+            <label><?php echo $usuario ?></label>
+        </div>
+    </div>    
     <div id="registerL">
         <div id="formRegisL">
             <form action="residenciaEBD.php" method="post" enctype="multipart/form-data">
@@ -33,6 +61,4 @@
             </form>
         </div>
     </div>
-</body>
-
-</html>
+    <?php require('includes/footer.php') ?>
