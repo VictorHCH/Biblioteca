@@ -1,5 +1,5 @@
+<?php require('includes/valida.php') ?>
 <?php
-
     include("conexion.php");
     if(!empty($_POST)){
         $idresidencia = $_POST['idresidencia'];
@@ -30,8 +30,11 @@
         }
     }
 ?>
+<<<<<<< Updated upstream
 
 <?php require('includes/valida.php') ?>
+=======
+>>>>>>> Stashed changes
     <div id="find">
     </div>
     <div class="data_delete">
